@@ -10,7 +10,7 @@ In lower level languages, we use a wider range of types such as signed and unsig
 long ints, short ints, chars, bytes, bools, etc. The purpose of more precise types in lower level languages is to
 manage the assignment of data more efficiently.
 
-'''python
+```python
 # In Python we do not have to declare the type of data we are using, but the
 # Python interpreter will processes data as intended
 
@@ -32,11 +32,11 @@ False == 1 # False
 
 True + True   # 2
 False + False # 0
-'''
+```
 
 In Python  we can freely perform operations between floats and ints.
 
-'''python
+```python
 my_int = 5
 my_float = 3.14
 
@@ -84,7 +84,7 @@ print(int(a) + int(b)) # 10
 
 my_string = "hello"
 print(int(my_string) # ValueError: invalid literal for int() with base 10: 'hello'
-'''
+```
 
 ## Non-Primitive Data Types
 Non-Primitive data types store a collection of values.
@@ -99,7 +99,7 @@ The last member of a list resides at n-1 where n is the length of the list. So i
 list of length 4 (4 members), we can access the first member using index 0 and the last
 member using index 3.
 
-'''python
+```python
 my_ints = [1,2,3,4]
 my_colors = ["red", "green", "blue"]
 
@@ -113,14 +113,14 @@ last_color = my_colors[my_colors_length - 1] # blue
 
 # We can perform the operation inside the brackets as well
 last_color = my_colors[len(my_colors) - 1] # blue
-'''
+```
 
 ## Dictionaries
 Dictionaries are a collection of key/value pairs where each key contains a value that will be returned.
 You can access dictionaires using the same bracket notation as you would with a list. In the case of a
 dictionary, instead of an index, we access the k/v pair using the key. A dictionary can hold any type of value.
 
-'''python
+```python
 person = {
   "first_name": "Claude",
   "last_name": "Shannon",
@@ -130,4 +130,4 @@ person = {
 
 # Note that keys in python are strings, so we must access the dict by providing the string representation of the key
 print(person["first_name"]) # "Claude"
-'''
+```

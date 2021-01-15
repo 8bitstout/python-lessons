@@ -16,7 +16,7 @@ class OrderedDictionary {
     constructor() {
         this.keys = [];
         this.values = {};
-        this.size++;
+        this.size = 0;
     }
 
     add(key, value) {
